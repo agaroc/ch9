@@ -1,0 +1,27 @@
+class Main{
+    function void main(){
+        var int input;
+        var int answer;
+        let input = 1;
+        while(~(input = 0)){
+            do Output.printString("Guess the number between 1-4! Press 0 to stop");
+            do Output.println();
+            do Random.setSeed(7);
+            let answer = Random.randRange(4);
+            do Output.printInt(answer);
+            let input = Keyboard.readInt("Input your guess: ");
+            if(input = 0){
+                do Output.printString("Thanks for playing!");
+            }else{
+                if(~(input = answer)){
+                    do Output.printString("Incorrect try again!");
+                    do Output.println();
+                }else{
+                    do Output.printString("Correct! Thanks for");
+                    do Sys.halt();
+                }
+            }
+        }
+        return;
+    }
+}
