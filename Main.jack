@@ -8,7 +8,6 @@ class Main{
             do Output.println();
             do Random.setSeed(7);
             let answer = Random.randRange(4);
-            do Output.printInt(answer);
             let input = Keyboard.readInt("Input your guess: ");
             if(input = 0){
                 do Output.printString("Thanks for playing!");
