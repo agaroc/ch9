@@ -16,7 +16,7 @@ class Main{
                     do Output.printString("Incorrect try again!");
                     do Output.println();
                 }else{
-                    do Output.printString("Correct! Thanks for");
+                    do Output.printString("Correct! Thanks for Playing");
                     do Sys.halt();
                 }
             }
